@@ -1,0 +1,47 @@
+from OpenGL.GL import *
+from OpenGL.GLUT import *
+from OpenGL.GLU import *
+
+def square():
+    glBegin(GL_QUADS)
+    glVertex2f(100, 100)
+    glVertex2f(200, 100)
+    glVertex2f(200, 200)
+    glVertex2f(100, 200)
+    glEnd()
+
+def cube():
+    # Draw Cube (multiple quads)
+    glBegin(GL_QUADS)
+    glColor3f(0.0, 1.0, 0.0)
+    glVertex3f(1.0, 1.0, -1.0)
+    glVertex3f(-1.0, 1.0, -1.0)
+    glVertex3f(-1.0, 1.0, 1.0)
+    glVertex3f(1.0, 1.0, 1.0)
+    glColor3f(1.0, 0.0, 0.0)
+    glVertex3f(1.0, -1.0, 1.0)
+    glVertex3f(-1.0, -1.0, 1.0)
+    glVertex3f(-1.0, -1.0, -1.0)
+    glVertex3f(1.0, -1.0, -1.0)
+    glColor3f(0.0, 1.0, 0.0)
+    glVertex3f(1.0, 1.0, 1.0)
+    glVertex3f(-1.0, 1.0, 1.0)
+    glVertex3f(-1.0, -1.0, 1.0)
+    glVertex3f(1.0, -1.0, 1.0)
+    glColor3f(1.0, 1.0, 0.0)
+    glVertex3f(1.0, -1.0, -1.0)
+    glVertex3f(-1.0, -1.0, -1.0)
+    glVertex3f(-1.0, 1.0, -1.0)
+    glVertex3f(1.0, 1.0, -1.0)
+    glColor3f(0.0, 0.0, 1.0)
+    glVertex3f(-1.0, 1.0, 1.0)
+    glVertex3f(-1.0, 1.0, -1.0)
+    glVertex3f(-1.0, -1.0, -1.0)
+    glVertex3f(-1.0, -1.0, 1.0)
+    glColor3f(1.0, 0.0, 1.0)
+    glVertex3f(1.0, 1.0, -1.0)
+    glVertex3f(1.0, 1.0, 1.0)
+    glVertex3f(1.0, -1.0, 1.0)
+    glVertex3f(1.0, -1.0, -1.0)
+
+    glEnd()
