@@ -31,9 +31,9 @@ class Client:
         glRotatef(self.x_axis, 1.0, 0.0, 0.0)
         glRotatef(self.y_axis, 0.0, 1.0, 0.0)
         glRotatef(self.z_axis, 0.0, 0.0, 1.0)
-        PyGL_Draw.cube()
-        self.x_axis = self.x_axis - 0.30
-        self.z_axis = self.z_axis - 0.30
+        PyGL_Draw.solidCube()
+        self.x_axis = self.x_axis - 0.25
+        self.z_axis = self.z_axis - 0.45
         glutSwapBuffers()
 
     def reshape(self, width, height):
